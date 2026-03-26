@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - DocExpiry</title>
+  <link rel="icon" type="image/png" href="app_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #050505;
+      --bg-card: #0f0f12;
+      --text: #e8e8ed;
+      --text-secondary: #8a8a9a;
+      --accent: #6c8cff;
+      --border: rgba(255,255,255,0.06);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      background: rgba(5,5,5,0.9);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .header-brand img { width: 32px; height: 32px; border-radius: 8px; }
+    .header-brand span { font-weight: 700; font-size: 16px; }
+
+    .header-links {
+      display: flex;
+      gap: 16px;
+      list-style: none;
+    }
+
+    .header-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .header-links a:hover { color: var(--text); }
+
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 12px;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .lang-switch:hover { background: rgba(255,255,255,0.1); }
+
+    /* Content */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    .page-title {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+
+    .page-meta {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    li { margin-bottom: 8px; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    strong { color: var(--text); font-weight: 600; }
+
+    .highlight-box {
+      padding: 20px 24px;
+      border-radius: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      margin: 20px 0;
+    }
+
+    .highlight-box p { margin-bottom: 0; }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      list-style: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--text); }
+
+    .footer-copy {
+      color: var(--text-secondary);
+      font-size: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .page-title { font-size: 28px; }
+      .header-links { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-inner">
+      <a href="index.html" class="header-brand">
+        <img src="app_icon.png" alt="DocExpiry">
+        <span>DocExpiry</span>
+      </a>
+      <ul class="header-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="privacy-policy-ar.html" class="lang-switch">العربية</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <main class="content">
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="page-meta">Last updated: March 26, 2026</p>
+
+    <p>L7 Techs ("we", "our", or "us") built DocExpiry as a mobile application. This Privacy Policy explains how we collect, use, and protect your information when you use our app.</p>
+
+    <div class="highlight-box">
+      <p><strong>In short:</strong> DocExpiry stores all your data locally on your device. We do not collect, transmit, or store your personal information on any server. Your documents are yours alone.</p>
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>DocExpiry processes the following types of information, all of which remain on your device:</p>
+    <ul>
+      <li><strong>Document images:</strong> Photos you take or select from your gallery for document scanning.</li>
+      <li><strong>Document details:</strong> Information extracted via OCR or entered manually, including names, document numbers, dates, nationality, and issuing authority.</li>
+      <li><strong>App preferences:</strong> Your chosen theme, language, biometric lock setting, and default reminder preferences.</li>
+      <li><strong>Reminder data:</strong> Notification schedules you set for document expiry dates.</li>
+    </ul>
+
+    <h2>2. How Your Data Is Stored</h2>
+    <p>All data is stored <strong>locally on your device</strong> using an on-device database. We do not use cloud storage, remote servers, or any form of data synchronization. If you uninstall the app, all data is permanently deleted.</p>
+
+    <h2>3. OCR Processing</h2>
+    <p>When you scan a document, the app may use <strong>Google Cloud Vision API</strong> to extract text from your document image. This means:</p>
+    <ul>
+      <li>Your document image is sent to Google's servers for text recognition processing.</li>
+      <li>Google processes the image and returns the extracted text to the app.</li>
+      <li>We do not store your images on any server — the image is only transmitted for processing and is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li>The extracted text is stored locally on your device only.</li>
+    </ul>
+
+    <h2>4. Biometric Authentication</h2>
+    <p>If you enable biometric lock (Face ID or fingerprint), DocExpiry uses your device's built-in biometric system to verify your identity. <strong>We do not access, collect, or store any biometric data.</strong> Authentication is handled entirely by your device's operating system.</p>
+
+    <h2>5. Permissions We Request</h2>
+    <p>DocExpiry requests the following device permissions, each for a specific purpose:</p>
+    <ul>
+      <li><strong>Camera:</strong> To photograph your documents for scanning.</li>
+      <li><strong>Photo Library:</strong> To select existing document images from your gallery.</li>
+      <li><strong>Notifications:</strong> To deliver expiry reminder notifications at your scheduled times.</li>
+      <li><strong>Biometric (Face ID / Fingerprint):</strong> To secure app access when you enable the biometric lock feature.</li>
+    </ul>
+
+    <h2>6. In-App Purchases</h2>
+    <p>DocExpiry offers an optional one-time purchase to unlock unlimited document storage. All purchases are processed through Apple App Store or Google Play Store. <strong>We do not collect or store any payment information.</strong> Purchase transactions are governed by the respective store's terms and privacy policies.</p>
+
+    <h2>7. Third-Party Services</h2>
+    <p>DocExpiry uses the following third-party services:</p>
+    <ul>
+      <li><strong>Google Cloud Vision API:</strong> For OCR text recognition (see Section 3).</li>
+      <li><strong>Apple App Store / Google Play Store:</strong> For in-app purchase processing.</li>
+    </ul>
+    <p>We do <strong>not</strong> use any analytics, advertising, crash reporting, or tracking services.</p>
+
+    <h2>8. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, trade, rent, or otherwise share your personal information with any third parties. The only external data transmission is document images sent to Google Cloud Vision API for OCR processing, as described in Section 3.</p>
+
+    <h2>9. Data Retention and Deletion</h2>
+    <p>Your data persists on your device until you choose to delete it. You can delete individual documents at any time within the app. Uninstalling the app removes all associated data from your device. We have no ability to access or recover your data since it is not stored on our servers.</p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>DocExpiry is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through our app, please contact us so we can take appropriate action.</p>
+
+    <h2>11. Data Security</h2>
+    <p>We take reasonable measures to protect your information:</p>
+    <ul>
+      <li>All data is stored locally in your device's secure application sandbox.</li>
+      <li>Optional biometric authentication adds an extra layer of security.</li>
+      <li>No data is transmitted to our servers, eliminating remote breach risks.</li>
+    </ul>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date. We encourage you to review this page periodically for any changes.</p>
+
+    <h2>13. Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:level7techs@gmail.com">level7techs@gmail.com</a></li>
+      <li><strong>Website:</strong> <a href="https://l7techs.github.io/DocExpiry/">https://l7techs.github.io/DocExpiry/</a></li>
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-inner">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="mailto:level7techs@gmail.com">Contact</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 L7 Techs. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

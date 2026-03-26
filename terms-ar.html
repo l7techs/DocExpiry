@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شروط الخدمة - DocExpiry</title>
+  <link rel="icon" type="image/png" href="app_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #050505;
+      --bg-card: #0f0f12;
+      --text: #e8e8ed;
+      --text-secondary: #8a8a9a;
+      --accent: #6c8cff;
+      --border: rgba(255,255,255,0.06);
+    }
+
+    body {
+      font-family: 'IBM Plex Sans Arabic', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+      direction: rtl;
+    }
+
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      background: rgba(5,5,5,0.9);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .header-brand img { width: 32px; height: 32px; border-radius: 8px; }
+    .header-brand span { font-weight: 700; font-size: 16px; font-family: 'Inter', sans-serif; }
+
+    .header-links {
+      display: flex;
+      gap: 16px;
+      list-style: none;
+    }
+
+    .header-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .header-links a:hover { color: var(--text); }
+
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 12px;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      transition: background 0.2s;
+    }
+
+    .lang-switch:hover { background: rgba(255,255,255,0.1); }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    .page-title {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .page-meta {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    ul, ol {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 16px;
+      padding-right: 24px;
+      padding-left: 0;
+    }
+
+    li { margin-bottom: 8px; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    strong { color: var(--text); font-weight: 600; }
+
+    .highlight-box {
+      padding: 20px 24px;
+      border-radius: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      margin: 20px 0;
+    }
+
+    .highlight-box p { margin-bottom: 0; }
+
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      list-style: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--text); }
+
+    .footer-copy {
+      color: var(--text-secondary);
+      font-size: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .page-title { font-size: 28px; }
+      .header-links { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-inner">
+      <a href="index.html" class="header-brand">
+        <img src="app_icon.png" alt="DocExpiry">
+        <span>DocExpiry</span>
+      </a>
+      <ul class="header-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="privacy-policy-ar.html">الخصوصية</a></li>
+        <li><a href="terms.html" class="lang-switch">English</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <main class="content">
+    <h1 class="page-title">شروط الخدمة</h1>
+    <p class="page-meta">آخر تحديث: 26 مارس 2026</p>
+
+    <p>يرجى قراءة شروط الخدمة ("الشروط") هذه بعناية قبل استخدام DocExpiry ("التطبيق")، الذي تديره L7 Techs ("نحن" أو "لنا"). بتنزيل التطبيق أو تثبيته أو استخدامه، فإنك توافق على الالتزام بهذه الشروط.</p>
+
+    <h2>1. قبول الشروط</h2>
+    <p>بالوصول إلى DocExpiry أو استخدامه، فإنك تؤكد أنك قرأت هذه الشروط وفهمتها ووافقت على الالتزام بها. إذا كنت لا توافق على هذه الشروط، يرجى عدم استخدام التطبيق.</p>
+
+    <h2>2. وصف الخدمة</h2>
+    <p>DocExpiry هو تطبيق للهواتف المحمولة يتيح لك:</p>
+    <ul>
+      <li>تصوير وتخزين نسخ رقمية من المستندات الشخصية (جوازات السفر، بطاقات الهوية، رخص القيادة، إلخ).</li>
+      <li>استخراج النص من المستندات باستخدام التعرف الضوئي على الحروف (OCR).</li>
+      <li>تنظيم المستندات في واجهة بنمط المحفظة.</li>
+      <li>تعيين تذكيرات لتواريخ انتهاء صلاحية المستندات.</li>
+      <li>تأمين الوصول بالمصادقة البيومترية.</li>
+    </ul>
+
+    <h2>3. مسؤوليات المستخدم</h2>
+    <p>عند استخدام DocExpiry، فإنك توافق على:</p>
+    <ul>
+      <li>استخدام التطبيق فقط لأغراض قانونية ووفقاً لهذه الشروط.</li>
+      <li>التأكد من أن أي مستندات تمسحها ضوئياً أو تخزنها تخصك أو لديك تصريح بتخزينها.</li>
+      <li>عدم استخدام التطبيق لأي أنشطة احتيالية أو مضللة أو غير قانونية.</li>
+      <li>تحمل مسؤولية الحفاظ على أمان جهازك، بما في ذلك تحديث نظام التشغيل والتطبيق.</li>
+      <li>فهم أنك المسؤول الوحيد عن نسخ بياناتك احتياطياً، حيث يتم تخزين جميع المعلومات محلياً على جهازك.</li>
+    </ul>
+
+    <h2>4. إخلاء مسؤولية دقة التعرف الضوئي</h2>
+    <div class="highlight-box">
+      <p><strong>مهم:</strong> ميزة التعرف الضوئي على الحروف (OCR) مقدمة كأداة مساعدة. قد لا يكون النص المستخرج دقيقاً بنسبة 100%. تحقق دائماً من المعلومات المستخرجة مقارنة بمستنداتك الأصلية. DocExpiry <strong>ليس بديلاً</strong> عن مستنداتك المادية الأصلية ولا ينبغي الاعتماد عليه كنسخة وحيدة لأي مستند مهم.</p>
+    </div>
+
+    <h2>5. الملكية الفكرية</h2>
+    <p>التطبيق، بما في ذلك تصميمه وكوده ورسوماته وشعاراته وواجهة المستخدم، هو ملكية فكرية لـ L7 Techs ومحمي بقوانين حقوق النشر والعلامات التجارية المعمول بها. لا يجوز لك نسخ أي جزء من التطبيق أو تعديله أو توزيعه أو بيعه أو تأجيره دون موافقتنا الخطية المسبقة.</p>
+
+    <h2>6. عمليات الشراء داخل التطبيق</h2>
+    <p>يقدم DocExpiry مستوى مجاني بتخزين محدود للمستندات وشراء لمرة واحدة لفتح "النسخة الاحترافية" بتخزين غير محدود.</p>
+    <ul>
+      <li>تتم معالجة جميع عمليات الشراء من خلال متجر Apple أو متجر Google Play وتخضع لشروط وأحكام المتجر المعني.</li>
+      <li>الترقية الاحترافية هي عملية شراء لمرة واحدة غير قابلة للاستهلاك تمنح وصولاً مدى الحياة.</li>
+      <li>يجب توجيه طلبات الاسترداد إلى Apple أو Google، حيث أننا لا نعالج المدفوعات مباشرة.</li>
+      <li>يمكنك استعادة عملية الشراء على أي جهاز باستخدام خيار "استعادة المشتريات" في إعدادات التطبيق.</li>
+    </ul>
+
+    <h2>7. الخصوصية</h2>
+    <p>خصوصيتك مهمة بالنسبة لنا. يرجى مراجعة <a href="privacy-policy-ar.html">سياسة الخصوصية</a> الخاصة بنا للحصول على تفاصيل حول كيفية تعاملنا مع معلوماتك. باستخدام التطبيق، فإنك توافق أيضاً على سياسة الخصوصية الخاصة بنا.</p>
+
+    <h2>8. إخلاء المسؤولية عن الضمانات</h2>
+    <p>يتم تقديم DocExpiry على أساس <strong>"كما هو"</strong> و<strong>"كما هو متاح"</strong>. إلى أقصى حد يسمح به القانون، نخلي مسؤوليتنا عن جميع الضمانات، الصريحة والضمنية، بما في ذلك على سبيل المثال لا الحصر:</p>
+    <ul>
+      <li>ضمانات القابلية للتسويق والملاءمة لغرض معين وعدم الانتهاك.</li>
+      <li>ضمانات بأن التطبيق سيكون دون انقطاع أو خالٍ من الأخطاء أو خالٍ من المكونات الضارة.</li>
+      <li>ضمانات بشأن دقة أو موثوقية نتائج التعرف الضوئي على الحروف.</li>
+      <li>ضمانات بأن إشعارات التذكير سيتم تسليمها في الوقت المحدد بالضبط (قد تؤثر تحسينات بطارية الجهاز وقيود النظام على التسليم).</li>
+    </ul>
+
+    <h2>9. تحديد المسؤولية</h2>
+    <p>إلى أقصى حد يسمح به القانون المعمول به، لن تكون L7 Techs مسؤولة عن أي أضرار غير مباشرة أو عرضية أو خاصة أو تبعية أو عقابية، بما في ذلك على سبيل المثال لا الحصر:</p>
+    <ul>
+      <li>فقدان البيانات المخزنة في التطبيق (بما في ذلك بسبب فقدان الجهاز أو تلفه أو إلغاء تثبيت التطبيق).</li>
+      <li>تواريخ انتهاء الصلاحية أو مواعيد التجديد الفائتة بسبب فشل الإشعارات.</li>
+      <li>أخطاء في استخراج النص أو تحليل حقول المستندات بواسطة التعرف الضوئي.</li>
+      <li>الوصول غير المصرح به إلى مستنداتك بسبب اختراق الجهاز.</li>
+    </ul>
+
+    <h2>10. الإنهاء</h2>
+    <p>يمكنك التوقف عن استخدام DocExpiry في أي وقت بإلغاء تثبيت التطبيق من جهازك. عند إلغاء التثبيت، سيتم حذف جميع البيانات المخزنة محلياً نهائياً. نحتفظ بالحق في إيقاف أو تعديل التطبيق في أي وقت دون إشعار مسبق.</p>
+
+    <h2>11. التغييرات على هذه الشروط</h2>
+    <p>نحتفظ بالحق في تعديل هذه الشروط في أي وقت. سيتم نشر التغييرات على هذه الصفحة مع تاريخ مراجعة محدّث. استمرارك في استخدام التطبيق بعد أي تغييرات يشكل قبولاً للشروط الجديدة.</p>
+
+    <h2>12. القانون الحاكم</h2>
+    <p>تخضع هذه الشروط وتُفسر وفقاً لقوانين الولاية القضائية التي تعمل فيها L7 Techs، بغض النظر عن أحكام تعارض القوانين.</p>
+
+    <h2>13. اتصل بنا</h2>
+    <p>إذا كان لديك أي أسئلة حول هذه الشروط، يرجى الاتصال بنا على:</p>
+    <ul>
+      <li><strong>البريد الإلكتروني:</strong> <a href="mailto:level7techs@gmail.com">level7techs@gmail.com</a></li>
+      <li><strong>الموقع الإلكتروني:</strong> <a href="https://l7techs.github.io/DocExpiry/">https://l7techs.github.io/DocExpiry/</a></li>
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-inner">
+      <ul class="footer-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="privacy-policy-ar.html">سياسة الخصوصية</a></li>
+        <li><a href="terms-ar.html">شروط الخدمة</a></li>
+        <li><a href="mailto:level7techs@gmail.com">اتصل بنا</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 L7 Techs. جميع الحقوق محفوظة.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - DocExpiry</title>
+  <link rel="icon" type="image/png" href="app_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #050505;
+      --bg-card: #0f0f12;
+      --text: #e8e8ed;
+      --text-secondary: #8a8a9a;
+      --accent: #6c8cff;
+      --border: rgba(255,255,255,0.06);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      background: rgba(5,5,5,0.9);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .header-brand img { width: 32px; height: 32px; border-radius: 8px; }
+    .header-brand span { font-weight: 700; font-size: 16px; }
+
+    .header-links {
+      display: flex;
+      gap: 16px;
+      list-style: none;
+    }
+
+    .header-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .header-links a:hover { color: var(--text); }
+
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 12px;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .lang-switch:hover { background: rgba(255,255,255,0.1); }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    .page-title {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+
+    .page-meta {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    ul, ol {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    li { margin-bottom: 8px; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    strong { color: var(--text); font-weight: 600; }
+
+    .highlight-box {
+      padding: 20px 24px;
+      border-radius: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      margin: 20px 0;
+    }
+
+    .highlight-box p { margin-bottom: 0; }
+
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      list-style: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--text); }
+
+    .footer-copy {
+      color: var(--text-secondary);
+      font-size: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .page-title { font-size: 28px; }
+      .header-links { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-inner">
+      <a href="index.html" class="header-brand">
+        <img src="app_icon.png" alt="DocExpiry">
+        <span>DocExpiry</span>
+      </a>
+      <ul class="header-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy-policy.html">Privacy</a></li>
+        <li><a href="terms-ar.html" class="lang-switch">العربية</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <main class="content">
+    <h1 class="page-title">Terms of Service</h1>
+    <p class="page-meta">Last updated: March 26, 2026</p>
+
+    <p>Please read these Terms of Service ("Terms") carefully before using DocExpiry ("the App"), operated by L7 Techs ("we", "our", or "us"). By downloading, installing, or using the App, you agree to be bound by these Terms.</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing or using DocExpiry, you confirm that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, please do not use the App.</p>
+
+    <h2>2. Description of Service</h2>
+    <p>DocExpiry is a mobile application that allows you to:</p>
+    <ul>
+      <li>Photograph and store digital copies of personal documents (passports, IDs, licenses, etc.).</li>
+      <li>Extract text from documents using optical character recognition (OCR).</li>
+      <li>Organize documents in a wallet-style interface.</li>
+      <li>Set reminders for document expiry dates.</li>
+      <li>Secure access with biometric authentication.</li>
+    </ul>
+
+    <h2>3. User Responsibilities</h2>
+    <p>When using DocExpiry, you agree to:</p>
+    <ul>
+      <li>Use the App only for lawful purposes and in accordance with these Terms.</li>
+      <li>Ensure that any documents you scan or store belong to you or that you have authorization to store them.</li>
+      <li>Not use the App for any fraudulent, deceptive, or illegal activities.</li>
+      <li>Take responsibility for maintaining the security of your device, including keeping your operating system and the App updated.</li>
+      <li>Understand that you are solely responsible for backing up your data, as all information is stored locally on your device.</li>
+    </ul>
+
+    <h2>4. OCR Accuracy Disclaimer</h2>
+    <div class="highlight-box">
+      <p><strong>Important:</strong> The OCR (optical character recognition) feature is provided as a convenience tool. Extracted text may not be 100% accurate. Always verify the extracted information against your original documents. DocExpiry is <strong>not a substitute</strong> for your original physical documents and should not be relied upon as the sole copy of any important document.</p>
+    </div>
+
+    <h2>5. Intellectual Property</h2>
+    <p>The App, including its design, code, graphics, logos, and user interface, is the intellectual property of L7 Techs and is protected by applicable copyright and trademark laws. You may not copy, modify, distribute, sell, or lease any part of the App without our prior written consent.</p>
+
+    <h2>6. In-App Purchases</h2>
+    <p>DocExpiry offers a free tier with limited document storage and a one-time "Pro" purchase for unlimited storage.</p>
+    <ul>
+      <li>All purchases are processed through Apple App Store or Google Play Store and are subject to the respective store's terms and conditions.</li>
+      <li>The Pro upgrade is a one-time, non-consumable purchase that grants lifetime access.</li>
+      <li>Refund requests must be directed to Apple or Google, as we do not process payments directly.</li>
+      <li>You may restore your purchase on any device using the "Restore Purchases" option in the App settings.</li>
+    </ul>
+
+    <h2>7. Privacy</h2>
+    <p>Your privacy is important to us. Please review our <a href="privacy-policy.html">Privacy Policy</a> for details on how we handle your information. By using the App, you also agree to our Privacy Policy.</p>
+
+    <h2>8. Disclaimer of Warranties</h2>
+    <p>DocExpiry is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis. To the fullest extent permitted by law, we disclaim all warranties, express or implied, including but not limited to:</p>
+    <ul>
+      <li>Warranties of merchantability, fitness for a particular purpose, and non-infringement.</li>
+      <li>Warranties that the App will be uninterrupted, error-free, or free of harmful components.</li>
+      <li>Warranties regarding the accuracy or reliability of OCR results.</li>
+      <li>Warranties that reminder notifications will be delivered at the exact scheduled time (device battery optimization and system restrictions may affect delivery).</li>
+    </ul>
+
+    <h2>9. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, L7 Techs shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:</p>
+    <ul>
+      <li>Loss of data stored in the App (including due to device loss, damage, or app uninstallation).</li>
+      <li>Missed expiry dates or renewal deadlines due to notification failures.</li>
+      <li>Errors in OCR text extraction or document field parsing.</li>
+      <li>Unauthorized access to your documents due to device compromise.</li>
+    </ul>
+
+    <h2>10. Termination</h2>
+    <p>You may stop using DocExpiry at any time by uninstalling the App from your device. Upon uninstallation, all locally stored data will be permanently deleted. We reserve the right to discontinue or modify the App at any time without prior notice.</p>
+
+    <h2>11. Changes to These Terms</h2>
+    <p>We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated revision date. Your continued use of the App after any changes constitutes acceptance of the new Terms.</p>
+
+    <h2>12. Governing Law</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which L7 Techs operates, without regard to its conflict of law provisions.</p>
+
+    <h2>13. Contact Us</h2>
+    <p>If you have any questions about these Terms, please contact us at:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:level7techs@gmail.com">level7techs@gmail.com</a></li>
+      <li><strong>Website:</strong> <a href="https://l7techs.github.io/DocExpiry/">https://l7techs.github.io/DocExpiry/</a></li>
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-inner">
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="mailto:level7techs@gmail.com">Contact</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 L7 Techs. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>

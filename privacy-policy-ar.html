@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية - DocExpiry</title>
+  <link rel="icon" type="image/png" href="app_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #050505;
+      --bg-card: #0f0f12;
+      --text: #e8e8ed;
+      --text-secondary: #8a8a9a;
+      --accent: #6c8cff;
+      --border: rgba(255,255,255,0.06);
+    }
+
+    body {
+      font-family: 'IBM Plex Sans Arabic', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+      direction: rtl;
+    }
+
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      background: rgba(5,5,5,0.9);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .header-brand img { width: 32px; height: 32px; border-radius: 8px; }
+    .header-brand span { font-weight: 700; font-size: 16px; font-family: 'Inter', sans-serif; }
+
+    .header-links {
+      display: flex;
+      gap: 16px;
+      list-style: none;
+    }
+
+    .header-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .header-links a:hover { color: var(--text); }
+
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 12px;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      transition: background 0.2s;
+    }
+
+    .lang-switch:hover { background: rgba(255,255,255,0.1); }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    .page-title {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .page-meta {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 16px;
+      padding-right: 24px;
+      padding-left: 0;
+    }
+
+    li { margin-bottom: 8px; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    strong { color: var(--text); font-weight: 600; }
+
+    .highlight-box {
+      padding: 20px 24px;
+      border-radius: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      margin: 20px 0;
+    }
+
+    .highlight-box p { margin-bottom: 0; }
+
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .footer-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      list-style: none;
+      margin-bottom: 16px;
+    }
+
+    .footer-links a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--text); }
+
+    .footer-copy {
+      color: var(--text-secondary);
+      font-size: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .page-title { font-size: 28px; }
+      .header-links { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-inner">
+      <a href="index.html" class="header-brand">
+        <img src="app_icon.png" alt="DocExpiry">
+        <span>DocExpiry</span>
+      </a>
+      <ul class="header-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="terms-ar.html">الشروط</a></li>
+        <li><a href="privacy-policy.html" class="lang-switch">English</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <main class="content">
+    <h1 class="page-title">سياسة الخصوصية</h1>
+    <p class="page-meta">آخر تحديث: 26 مارس 2026</p>
+
+    <p>قامت L7 Techs ("نحن" أو "لنا") بتطوير تطبيق DocExpiry كتطبيق للهواتف المحمولة. توضح سياسة الخصوصية هذه كيفية جمعنا واستخدامنا وحمايتنا لمعلوماتك عند استخدام تطبيقنا.</p>
+
+    <div class="highlight-box">
+      <p><strong>باختصار:</strong> يقوم DocExpiry بتخزين جميع بياناتك محلياً على جهازك. نحن لا نجمع أو ننقل أو نخزن معلوماتك الشخصية على أي خادم. وثائقك ملكك وحدك.</p>
+    </div>
+
+    <h2>1. المعلومات التي نعالجها</h2>
+    <p>يعالج DocExpiry الأنواع التالية من المعلومات، وجميعها تبقى على جهازك:</p>
+    <ul>
+      <li><strong>صور المستندات:</strong> الصور التي تلتقطها أو تختارها من معرض الصور لمسح المستندات.</li>
+      <li><strong>تفاصيل المستندات:</strong> المعلومات المستخرجة عبر التعرف الضوئي على الحروف (OCR) أو التي يتم إدخالها يدوياً، بما في ذلك الأسماء وأرقام المستندات والتواريخ والجنسية وجهة الإصدار.</li>
+      <li><strong>تفضيلات التطبيق:</strong> المظهر المختار واللغة وإعداد القفل البيومتري وتفضيلات التذكير الافتراضية.</li>
+      <li><strong>بيانات التذكير:</strong> جداول الإشعارات التي تحددها لتواريخ انتهاء صلاحية المستندات.</li>
+    </ul>
+
+    <h2>2. كيفية تخزين بياناتك</h2>
+    <p>يتم تخزين جميع البيانات <strong>محلياً على جهازك</strong> باستخدام قاعدة بيانات محلية. نحن لا نستخدم التخزين السحابي أو الخوادم البعيدة أو أي شكل من أشكال مزامنة البيانات. إذا قمت بإلغاء تثبيت التطبيق، سيتم حذف جميع البيانات نهائياً.</p>
+
+    <h2>3. معالجة التعرف الضوئي على الحروف (OCR)</h2>
+    <p>عند مسح مستند ضوئياً، قد يستخدم التطبيق <strong>واجهة برمجة تطبيقات Google Cloud Vision</strong> لاستخراج النص من صورة مستندك. هذا يعني:</p>
+    <ul>
+      <li>يتم إرسال صورة مستندك إلى خوادم Google لمعالجة التعرف على النص.</li>
+      <li>تقوم Google بمعالجة الصورة وإعادة النص المستخرج إلى التطبيق.</li>
+      <li>نحن لا نخزن صورك على أي خادم — يتم نقل الصورة فقط للمعالجة وتخضع لـ<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google</a>.</li>
+      <li>يتم تخزين النص المستخرج محلياً على جهازك فقط.</li>
+    </ul>
+
+    <h2>4. المصادقة البيومترية</h2>
+    <p>إذا قمت بتفعيل القفل البيومتري (بصمة الوجه أو بصمة الإصبع)، يستخدم DocExpiry نظام المصادقة البيومترية المدمج في جهازك للتحقق من هويتك. <strong>نحن لا نصل إلى أي بيانات بيومترية أو نجمعها أو نخزنها.</strong> تتم المصادقة بالكامل بواسطة نظام التشغيل الخاص بجهازك.</p>
+
+    <h2>5. الأذونات التي نطلبها</h2>
+    <p>يطلب DocExpiry أذونات الجهاز التالية، كل منها لغرض محدد:</p>
+    <ul>
+      <li><strong>الكاميرا:</strong> لتصوير مستنداتك لغرض المسح الضوئي.</li>
+      <li><strong>مكتبة الصور:</strong> لاختيار صور المستندات الموجودة من معرض الصور.</li>
+      <li><strong>الإشعارات:</strong> لتوصيل إشعارات تذكير انتهاء الصلاحية في الأوقات المحددة.</li>
+      <li><strong>البيومتري (بصمة الوجه / بصمة الإصبع):</strong> لتأمين الوصول إلى التطبيق عند تفعيل ميزة القفل البيومتري.</li>
+    </ul>
+
+    <h2>6. عمليات الشراء داخل التطبيق</h2>
+    <p>يقدم DocExpiry عملية شراء اختيارية لمرة واحدة لفتح تخزين غير محدود للمستندات. تتم معالجة جميع عمليات الشراء من خلال متجر Apple أو متجر Google Play. <strong>نحن لا نجمع أو نخزن أي معلومات دفع.</strong> تخضع معاملات الشراء لشروط وسياسات خصوصية المتجر المعني.</p>
+
+    <h2>7. خدمات الطرف الثالث</h2>
+    <p>يستخدم DocExpiry خدمات الطرف الثالث التالية:</p>
+    <ul>
+      <li><strong>واجهة برمجة تطبيقات Google Cloud Vision:</strong> للتعرف الضوئي على النص (انظر القسم 3).</li>
+      <li><strong>متجر Apple / متجر Google Play:</strong> لمعالجة عمليات الشراء داخل التطبيق.</li>
+    </ul>
+    <p>نحن <strong>لا</strong> نستخدم أي خدمات تحليلات أو إعلانات أو تقارير أعطال أو تتبع.</p>
+
+    <h2>8. مشاركة البيانات</h2>
+    <p>نحن <strong>لا</strong> نبيع أو نتاجر أو نؤجر أو نشارك معلوماتك الشخصية مع أي أطراف ثالثة. النقل الوحيد للبيانات الخارجية هو إرسال صور المستندات إلى واجهة برمجة تطبيقات Google Cloud Vision لمعالجة التعرف الضوئي على الحروف، كما هو موضح في القسم 3.</p>
+
+    <h2>9. الاحتفاظ بالبيانات وحذفها</h2>
+    <p>تبقى بياناتك على جهازك حتى تختار حذفها. يمكنك حذف المستندات الفردية في أي وقت من داخل التطبيق. يؤدي إلغاء تثبيت التطبيق إلى إزالة جميع البيانات المرتبطة من جهازك. ليس لدينا القدرة على الوصول إلى بياناتك أو استردادها لأنها غير مخزنة على خوادمنا.</p>
+
+    <h2>10. خصوصية الأطفال</h2>
+    <p>DocExpiry غير موجه للأطفال دون سن 13 عاماً. نحن لا نجمع عن قصد معلومات شخصية من الأطفال. إذا كنت تعتقد أن طفلاً قد قدم معلومات شخصية من خلال تطبيقنا، يرجى الاتصال بنا حتى نتمكن من اتخاذ الإجراء المناسب.</p>
+
+    <h2>11. أمان البيانات</h2>
+    <p>نتخذ تدابير معقولة لحماية معلوماتك:</p>
+    <ul>
+      <li>يتم تخزين جميع البيانات محلياً في بيئة التطبيق الآمنة على جهازك.</li>
+      <li>المصادقة البيومترية الاختيارية تضيف طبقة إضافية من الأمان.</li>
+      <li>لا يتم نقل أي بيانات إلى خوادمنا، مما يلغي مخاطر الاختراق عن بُعد.</li>
+    </ul>
+
+    <h2>12. التغييرات على هذه السياسة</h2>
+    <p>قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سيتم نشر التغييرات على هذه الصفحة مع تاريخ مراجعة محدّث. نشجعك على مراجعة هذه الصفحة بشكل دوري للاطلاع على أي تغييرات.</p>
+
+    <h2>13. اتصل بنا</h2>
+    <p>إذا كان لديك أي أسئلة أو مخاوف بشأن سياسة الخصوصية هذه، يرجى الاتصال بنا على:</p>
+    <ul>
+      <li><strong>البريد الإلكتروني:</strong> <a href="mailto:level7techs@gmail.com">level7techs@gmail.com</a></li>
+      <li><strong>الموقع الإلكتروني:</strong> <a href="https://l7techs.github.io/DocExpiry/">https://l7techs.github.io/DocExpiry/</a></li>
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-inner">
+      <ul class="footer-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="privacy-policy-ar.html">سياسة الخصوصية</a></li>
+        <li><a href="terms-ar.html">شروط الخدمة</a></li>
+        <li><a href="mailto:level7techs@gmail.com">اتصل بنا</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 L7 Techs. جميع الحقوق محفوظة.</p>
+    </div>
+  </div>
+</body>
+</html>
